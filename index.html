@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1 id="heading">   Welcome to "Flappy!" by Ankita <3 </h1>
+<div id="game">
+    <div id="score">Score: 0</div>
+    <div id="block"></div>
+    <div id="hole"></div>
+
+    <div id="bird">
+        <img src="bird.png" alt="bird">
+    </div>
+</div>
+
+<!-- Sounds -->
+<audio id="bgm" src="bgm.mp3" loop></audio>
+<audio id="gameOverSound" src="gameover.mp3"></audio>
+<audio id="scoreSound" src="ting.mp3"></audio>
+
+<!-- Result -->
+<div id="result">
+    <h1>GAME OVER!</h1>
+    <p id="text"></p>
+    <button id="restart" onclick="location.reload()">Restart</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
